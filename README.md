@@ -1,6 +1,5 @@
 # 🇨🇦 Canada Immigration Lead Finder - AI-Powered Automation
 
-**Savoir AI – OTFCoder Private Limited**  
 **AI Engineer —  (Real-World Build Challenge)**
 
 An automated AI-powered system that finds people online asking about Canadian immigration services, qualifies them as potential leads using Claude AI, and organizes them for outreach—**completely on autopilot**.
