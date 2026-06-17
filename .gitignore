@@ -51,7 +51,8 @@ env
 .DS_Store
 
 # Generated Output
-output/*.csv
+# Keep sample_leads.csv as reference, exclude others
+output/sample_leads_demo.csv
 output/*.json
 output/temp/
 logs/
