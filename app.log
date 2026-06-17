@@ -1,0 +1,117 @@
+2026-06-17 10:04:45,554 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 10:04:46,868 - __main__ - INFO - ============================================================
+2026-06-17 10:04:46,882 - __main__ - INFO - ============================================================
+2026-06-17 10:04:46,887 - src.reddit_scraper - INFO - Scraping r/canadaimmigration...
+2026-06-17 10:04:48,736 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 10:04:48,739 - src.reddit_scraper - INFO - Scraping r/ImmigrationCanada...
+2026-06-17 10:04:50,169 - src.reddit_scraper - ERROR - Error scraping r/ImmigrationCanada: received 401 HTTP response
+2026-06-17 10:04:50,177 - src.reddit_scraper - INFO - Scraping r/CanadianImmigrant...
+2026-06-17 10:04:51,703 - src.reddit_scraper - ERROR - Error scraping r/CanadianImmigrant: received 401 HTTP response
+2026-06-17 10:04:51,706 - src.reddit_scraper - INFO - Scraping r/Canada...
+2026-06-17 10:04:53,134 - src.reddit_scraper - ERROR - Error scraping r/Canada: received 401 HTTP response
+2026-06-17 10:04:53,153 - __main__ - WARNING - No posts found. Exiting pipeline.
+2026-06-17 10:05:45,043 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 10:05:45,726 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 10:05:45,727 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 10:05:46,740 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 10:05:46,742 - __main__ - INFO - ============================================================
+2026-06-17 10:05:46,742 - __main__ - INFO - 🚀 Starting Canada Immigration Lead Finder Pipeline
+2026-06-17 10:05:46,742 - __main__ - INFO - ============================================================
+2026-06-17 10:05:46,743 - __main__ - INFO - 
+📱 Step 1: Scraping Reddit...
+2026-06-17 10:05:46,743 - src.reddit_scraper - INFO - Scraping r/canadaimmigration...
+2026-06-17 10:05:48,235 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 10:05:48,249 - src.reddit_scraper - INFO - Scraping r/ImmigrationCanada...
+2026-06-17 10:05:49,564 - src.reddit_scraper - ERROR - Error scraping r/ImmigrationCanada: received 401 HTTP response
+2026-06-17 10:05:49,566 - src.reddit_scraper - INFO - Scraping r/CanadianImmigrant...
+2026-06-17 10:05:50,780 - src.reddit_scraper - ERROR - Error scraping r/CanadianImmigrant: received 401 HTTP response
+2026-06-17 10:05:50,782 - src.reddit_scraper - INFO - Scraping r/Canada...
+2026-06-17 10:05:52,223 - src.reddit_scraper - ERROR - Error scraping r/Canada: received 401 HTTP response
+2026-06-17 10:05:52,230 - src.reddit_scraper - INFO - ✓ Total posts scraped: 0
+2026-06-17 10:05:52,231 - __main__ - INFO - ✓ Scraped 0 posts
+2026-06-17 10:05:52,232 - __main__ - WARNING - No posts found. Exiting pipeline.
+2026-06-17 10:05:52,234 - __main__ - INFO - 
+⚠️  Pipeline completed but no qualified leads found
+2026-06-17 10:58:14,587 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 10:58:15,323 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 10:58:17,650 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 10:58:17,708 - posts.ai_qualifier - ERROR - Error qualifying lead: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-06-17 10:58:18,694 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 10:58:18,778 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 10:59:25,583 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 10:59:25,953 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 10:59:25,953 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 10:59:26,549 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 10:59:26,550 - __main__ - INFO - ============================================================
+2026-06-17 10:59:26,550 - __main__ - INFO - 🚀 Starting Canada Immigration Lead Finder Pipeline
+2026-06-17 10:59:26,550 - __main__ - INFO - ============================================================
+2026-06-17 10:59:26,550 - __main__ - INFO - 
+📱 Step 1: Scraping Reddit...
+2026-06-17 10:59:26,550 - src.reddit_scraper - INFO - Scraping r/canadaimmigration...
+2026-06-17 10:59:27,311 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 10:59:27,312 - src.reddit_scraper - INFO - Scraping r/ImmigrationCanada...
+2026-06-17 10:59:28,128 - src.reddit_scraper - ERROR - Error scraping r/ImmigrationCanada: received 401 HTTP response
+2026-06-17 10:59:28,130 - src.reddit_scraper - INFO - Scraping r/CanadianImmigrant...
+2026-06-17 10:59:28,803 - src.reddit_scraper - ERROR - Error scraping r/CanadianImmigrant: received 401 HTTP response
+2026-06-17 10:59:28,806 - src.reddit_scraper - INFO - Scraping r/Canada...
+2026-06-17 10:59:29,414 - src.reddit_scraper - ERROR - Error scraping r/Canada: received 401 HTTP response
+2026-06-17 10:59:29,416 - src.reddit_scraper - INFO - ✓ Total posts scraped: 0
+2026-06-17 10:59:29,417 - __main__ - INFO - ✓ Scraped 0 posts
+2026-06-17 10:59:29,417 - __main__ - WARNING - No posts found. Exiting pipeline.
+2026-06-17 10:59:29,418 - __main__ - INFO - 
+⚠️  Pipeline completed but no qualified leads found
+2026-06-17 11:00:29,735 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 11:00:30,128 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 11:00:30,128 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 11:00:30,768 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 11:00:30,768 - __main__ - INFO - ============================================================
+2026-06-17 11:00:30,768 - __main__ - INFO - 🚀 Starting Canada Immigration Lead Finder Pipeline
+2026-06-17 11:00:30,769 - __main__ - INFO - ============================================================
+2026-06-17 11:00:30,769 - __main__ - INFO - 
+📱 Step 1: Scraping Reddit...
+2026-06-17 11:00:30,769 - src.reddit_scraper - INFO - Scraping r/canadaimmigration...
+2026-06-17 11:00:31,476 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 11:00:31,478 - src.reddit_scraper - INFO - Scraping r/ImmigrationCanada...
+2026-06-17 11:00:32,094 - src.reddit_scraper - ERROR - Error scraping r/ImmigrationCanada: received 401 HTTP response
+2026-06-17 11:00:32,096 - src.reddit_scraper - INFO - Scraping r/CanadianImmigrant...
+2026-06-17 11:00:32,786 - src.reddit_scraper - ERROR - Error scraping r/CanadianImmigrant: received 401 HTTP response
+2026-06-17 11:00:32,788 - src.reddit_scraper - INFO - Scraping r/Canada...
+2026-06-17 11:00:33,422 - src.reddit_scraper - ERROR - Error scraping r/Canada: received 401 HTTP response
+2026-06-17 11:00:33,424 - src.reddit_scraper - INFO - ✓ Total posts scraped: 0
+2026-06-17 11:00:33,425 - __main__ - INFO - ✓ Scraped 0 posts
+2026-06-17 11:00:33,425 - __main__ - WARNING - No posts found. Exiting pipeline.
+2026-06-17 11:00:33,426 - __main__ - INFO - 
+⚠️  Pipeline completed but no qualified leads found
+2026-06-17 11:01:05,273 - __main__ - INFO - ============================================================
+2026-06-17 11:01:05,274 - __main__ - INFO - 🕐 Canada Immigration Lead Finder Scheduler
+2026-06-17 11:01:05,274 - __main__ - INFO - ============================================================
+2026-06-17 11:01:05,277 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 11:01:05,831 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 11:01:05,831 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 11:01:06,801 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 11:01:06,802 - __main__ - INFO - ✓ Pipeline scheduled to run every 6 hours
+2026-06-17 11:01:06,803 - __main__ - INFO - 🚀 Scheduler started. Press Ctrl+C to stop.
+2026-06-17 11:13:14,221 - __main__ - INFO - 
+⏹️  Scheduler stopped by user
+2026-06-17 11:13:38,457 - src.reddit_scraper - INFO - ✓ Reddit API connection established
+2026-06-17 11:13:38,906 - posts.ai_qualifier - INFO - ✓ Claude AI client initialized
+2026-06-17 11:13:38,907 - Claude.sheets_uploader - WARNING - Google Sheets API libraries not available. Install with: pip install google-api-python-client
+2026-06-17 11:13:39,486 - Sheets.telegram_notifier - INFO - ✓ Telegram bot initialized
+2026-06-17 11:13:39,487 - __main__ - INFO - ============================================================
+2026-06-17 11:13:39,487 - __main__ - INFO - 🚀 Starting Canada Immigration Lead Finder Pipeline
+2026-06-17 11:13:39,487 - __main__ - INFO - ============================================================
+2026-06-17 11:13:39,487 - __main__ - INFO - 
+📱 Step 1: Scraping Reddit...
+2026-06-17 11:13:39,487 - src.reddit_scraper - INFO - Scraping r/canadaimmigration...
+2026-06-17 11:13:40,184 - src.reddit_scraper - ERROR - Error scraping r/canadaimmigration: received 401 HTTP response
+2026-06-17 11:13:40,185 - src.reddit_scraper - INFO - Scraping r/ImmigrationCanada...
+2026-06-17 11:13:40,829 - src.reddit_scraper - ERROR - Error scraping r/ImmigrationCanada: received 401 HTTP response
+2026-06-17 11:13:40,831 - src.reddit_scraper - INFO - Scraping r/CanadianImmigrant...
+2026-06-17 11:13:41,500 - src.reddit_scraper - ERROR - Error scraping r/CanadianImmigrant: received 401 HTTP response
+2026-06-17 11:13:41,501 - src.reddit_scraper - INFO - Scraping r/Canada...
+2026-06-17 11:13:42,188 - src.reddit_scraper - ERROR - Error scraping r/Canada: received 401 HTTP response
+2026-06-17 11:13:42,189 - src.reddit_scraper - INFO - ✓ Total posts scraped: 0
+2026-06-17 11:13:42,189 - __main__ - INFO - ✓ Scraped 0 posts
+2026-06-17 11:13:42,190 - __main__ - WARNING - No posts found. Exiting pipeline.
+2026-06-17 11:13:42,190 - __main__ - INFO - 
+⚠️  Pipeline completed but no qualified leads found

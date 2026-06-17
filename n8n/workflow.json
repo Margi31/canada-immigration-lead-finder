@@ -1,0 +1,89 @@
+{
+  "name": "Canada Immigration Lead Finder",
+  "nodes": [
+    {
+      "parameters": {
+        "unit": "hours",
+        "value": 6
+      },
+      "name": "Trigger",
+      "type": "n8n-nodes-base.interval",
+      "typeVersion": 1,
+      "position": [100, 100]
+    },
+    {
+      "parameters": {
+        "command": "python main.py",
+        "timeout": 300,
+        "workingDirectory": "/app"
+      },
+      "name": "Run Pipeline",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [300, 100]
+    },
+    {
+      "parameters": {
+        "operation": "overwrite",
+        "documentId": "{{ $env.GOOGLE_SHEET_ID }}",
+        "dataMode": "auto",
+        "range": "A1"
+      },
+      "name": "Upload to Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 2,
+      "position": [500, 100],
+      "credentials": {
+        "googleSheetsOAuth2Api": "google"
+      }
+    },
+    {
+      "parameters": {
+        "message": "New leads found from Canada Immigration Lead Finder",
+        "chatId": "{{ $env.TELEGRAM_CHAT_ID }}"
+      },
+      "name": "Send Telegram Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [700, 100],
+      "credentials": {
+        "telegramApi": "telegram"
+      }
+    }
+  ],
+  "connections": {
+    "Trigger": {
+      "main": [
+        [
+          {
+            "node": "Run Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Pipeline": {
+      "main": [
+        [
+          {
+            "node": "Upload to Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload to Sheets": {
+      "main": [
+        [
+          {
+            "node": "Send Telegram Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
